@@ -1,86 +1,80 @@
-# Specialist Doctor Recommendation and Appointment Booking System
+# 📚 Publication Summary Generator for Faculty Profiles
 
-This is a specialized doctor recommendation and appointment booking system built using Next.js. It helps users to input their symptoms, predict potential diseases, and book appointments with recommended doctors.
+An AI-powered system developed by **Utkarsh Singh** that automates the extraction, enrichment, and visualization of publication records for faculty profiles. This tool scrapes data from Google Scholar and other academic databases like Scopus and CrossRef, providing customizable outputs in Excel/CSV format along with citation analysis and indexing status.
 
-## Features
+---
 
-### For Users:
+## 🚀 Features
 
-- **User Registration/Login:** Allow users to register and log in securely.
-- **Symptom Input:** Provide a form for users to input their symptoms.
-- **Disease Prediction:** Utilize machine learning to predict potential diseases based on symptoms.
-- **Doctor Recommendation:** Recommend specialized doctors based on predicted diseases.
-- **Appointment Booking:** Allow users to book appointments with recommended doctors.
-- **Appointment Management:** View, reschedule, or cancel appointments.
+### 👤 Faculty Profile Support
+- Scrapes and fetches publication data using author profile URLs (Google Scholar, Scopus).
+- Extracts metadata including title, authors, journal, year, citations, and indexing.
+- Detects journal/conference indexing (e.g., Scopus) and alerts if data is missing.
+- H-index calculation and customizable filtering (by year, index, author, etc.)
 
-### For Doctors:
+### 📊 Data Analysis & Export
+- Provides citation distribution analysis via interactive visualizations.
+- Generates downloadable Excel/CSV reports with selected columns.
+- Built-in citation count and year-wise trends.
 
-- **Doctor Registration/Login:** Allow doctors to register and log in securely.
-- **Appointment Management:** Display upcoming appointments and manage them efficiently.
-- **Patient Information:** Access patient profiles and medical history for appointments.
+### 🔐 User Access & Security
+- Includes login/permission system for secure access.
+- Role-based user dashboard for faculty and admin.
 
+---
 
+## 🛠️ Technologies Used
 
-### For Admins:
+| Layer       | Technology                                        |
+|-------------|---------------------------------------------------|
+| Frontend    | HTML5, CSS3, JavaScript (Bootstrap)              |
+| Backend     | Python, Django                                    |
+| Database    | SQLite / PostgreSQL                               |
+| Web Scraping| Scholarly, Selenium, BeautifulSoup, CrossRef API, Scopus API |
+| Visualization | Matplotlib, Seaborn                          |
+| Others      | Pandas, NumPy, OpenPyXL                           |
 
-- **Admin Dashboard:** Provide an overview of platform performance and user statistics.
-- **User and Doctor Management:** Manage user accounts and doctor profiles.
-- **Appointment Monitoring:** Monitor and manage appointments across the platform.
-- **Analytics and Reporting:** Generate reports on user activity and appointment trends.
-- **System Configuration:** Configure application settings and preferences.
+---
 
-### General Features:
-
-- **Security Measures:** Implement robust security measures to protect user data.
-- **Responsive Design:** Develop a user interface that works seamlessly across devices.
-- **Feedback and Ratings:** Allow users to provide feedback and ratings for doctors.
-- **Search Functionality:** Enable users to search for doctors by specialty and location.
-- **Notifications:** Send notifications for appointment reminders and updates.
-- **Payment Integration:** Integrate payment gateways for appointment fees.
-
-## Technologies Used
-
-- **Next.js**: Frontend framework for building React applications.
-- **Machine Learning**: Used for disease prediction based on symptoms.
-- **Authentication**: Secure user authentication using JWT tokens.
-- **Database**: Store user, doctor, and appointment data in a secure database.
-- **Payment Gateway**: Integrate a payment gateway for handling appointment fees.
-
-## Installation
-
-1. Clone the repository:
+## 📥 Installation & Setup
 
 ```bash
-git clone https://github.com/mahafujul/MedNexa.git
-cd MedNexa
+# Clone the repository
+git clone https://github.com/Anoymous786/-Publication-Summary-Generator.git
+cd Publication-Summary-Generator
+
+# Create virtual environment
+python -m venv venv
+# Activate it
+# Windows:
+venv\Scripts\activate
+# macOS/Linux:
+source venv/bin/activate
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Run the server
+python manage.py runserver
 ```
 
-2. Install dependencies:
+Visit: [http://localhost:8000](http://localhost:8000)
 
-```bash
-npm install
-# or
-yarn install
-# or
-pnpm install
-# or
-bun install
-```
+---
 
-3. Start the development server:
+## ✍️ Author
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+**Utkarsh Singh**  
+GitHub: [Anoymous786](https://github.com/Anoymous786)  
+Email: [utsi22ise@cmrit.ac.in](mailto:utsi22ise@cmrit.ac.in)  
+LinkedIn: [linkedin.com/in/utkarsh746](https://www.linkedin.com/in/utkarsh746)
 
-4. Visit `http://localhost:3000` in your browser to view the application.
+---
 
-## Contributing
+## 📄 License
 
-Contributions are welcome! Please fork the repository and submit a pull request with your changes.
+MIT License
+
+---
+
+> ✅ This project is authored and maintained by Utkarsh Singh and is aligned with backend-focused job roles. It demonstrates proficiency in Python, Django, web scraping, secure role-based access, and academic data automation.
